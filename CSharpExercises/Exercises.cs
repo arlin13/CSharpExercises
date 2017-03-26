@@ -115,9 +115,9 @@ namespace CSharpExercises
         // 13. Create a method called GetMilesPerHour that accepts a double representing distance and three integers representing hours, minutes and seconds. The method should return the speed in MPH rounded to the nearest whole number as a string. (e.g. "55MPH")
         public static string GetMilesPerHour(double distance, int hours, int minutes, int seconds)
         {
-            string speed = string.Empty;
-
-            return speed;
+            int totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
+            var speed = Math.Round((3600 * distance) / totalSeconds);
+            return speed + "MPH";
         }
 
 
