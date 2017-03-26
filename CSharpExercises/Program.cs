@@ -80,15 +80,15 @@ namespace CSharpExercises
             Assert("IsConsonant('z') should return true", Exercises.IsConsonant('z') == true);
             Assert("IsConsonant((char)97) should return false", Exercises.IsConsonant((char)97) == false); // http://www.dotnetperls.com/char
 
-            Console.WriteLine("\n15. Collatz Conjecture");
+            Console.WriteLine("\n16. Collatz Conjecture");
             Assert("CollatzConjecture(27) should return 111", Exercises.CollatzConjecture(27) == 111);
 
             //Assert("GetOccurences(\"Hello World!\", \"World\") should return 1", Exercises.GetOccurences("Hello World!", "World") == 1);
 
-            Console.WriteLine("\n16. Get next 7 days");
+            Console.WriteLine("\n17. Get next 7 days");
             Assert("GetNext7Days() should return next 7 days", JsonConvert.SerializeObject(Exercises.GetNext7Days(DateTime.Parse("08/22/2016"))) == JsonConvert.SerializeObject(Constants.Next7Days));
 
-            Console.WriteLine("\n17. Is in leap year");
+            Console.WriteLine("\n18. Is in leap year");
             Assert("IsInLeapYear(2000) should return true", Exercises.IsLeapYear(2000) == true);
             Assert("IsInLeapYear(1904) should return true", Exercises.IsLeapYear(1904) == true);
             Assert("IsInLeapYear(1900) should return false", Exercises.IsLeapYear(1900) == false);

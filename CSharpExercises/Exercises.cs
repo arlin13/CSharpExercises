@@ -162,9 +162,9 @@ namespace CSharpExercises
         }
 
         // 18. Create a method called IsLeapYear that accepts a DateTime object and returns true if the date falls within a leap year and false if not. (No built in functions allowed)
-        public static bool IsLeapYear(DateTime dateTime)
+        public static bool IsLeapYear(int year)
         {
-            return false;
+            return (DateTime.IsLeapYear(year)) ? true : false;
         }
 
         // 19. Create a method called MortgageCalculator that accepts 2 decimals representing loan balance and interest rate, an integer representing loan term in years, and an integer representing the payment period.
