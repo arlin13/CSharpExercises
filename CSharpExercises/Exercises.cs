@@ -169,12 +169,33 @@ namespace CSharpExercises
 
         // 19. Create a method called MortgageCalculator that accepts 2 decimals representing loan balance and interest rate, an integer representing loan term in years, and an integer representing the payment period.
         /* Payment periods: 1 - Monthly, 2 - Bi-Monthly (Every 2 months) */
-        public static void MortgageCalculator()
+        public static double MortgageCalculator(decimal loanBalance, decimal interestRate, int years, int paymentMethod)
         {
-
+            return 10.0;
         }
 
         // 20. Create a method called DuckGoose that accepts an integer. Iterate from 1 to this integer, building a string along the way.
+        public static string DuckGoose(int top)
+        {
+            int number = 1;
+            string text = string.Empty;
+            for (int i = 1; i <= top; i++)
+            {
+                if (number % 3 == 0 && number % 5 == 0)
+                    text += "DuckGoose";
+                else if (number % 3 == 0)
+                    text += "Duck";
+                else if (number % 5 == 0)
+                    text += "Goose";
+                else
+                    text += number.ToString();
+                if (number < top)
+                    text += Environment.NewLine;
+                number++;
+            }
+            text.TrimEnd(Environment.NewLine.ToCharArray());
+            return text;
+        }
         // If the current number in the iteration:
         //   Is divisible by 3, append "Duck" + Environment.NewLine; to the string.
         //   Is divisible by 5, append "Goose" + Environment.NewLine; to the string.
