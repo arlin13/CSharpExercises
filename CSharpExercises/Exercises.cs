@@ -76,7 +76,7 @@ namespace CSharpExercises
         // 9. Create a method called ConvertKelvinToFahrenheit that accepts a double representing a temperature in kelvin and returns a double containing the temperature in Fahrenheit.
         public static double ConvertKelvinToFahrenheit(double kelvinTemperature)
         {
-            return 1.8 * (kelvinTemperature - 273) + 32;
+            return Math.Round((1.8 * (kelvinTemperature - 273.15)) + 32, 2);
         }
 
         // 10. Create a method called GetAverageHard that accepts an array of integers and returns the average value as a double. (No built in functions allowed)
